@@ -3,7 +3,6 @@ dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Dat
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 ###########- COLOR CODE -##############
 echo -e " [INFO] Downloading Update File"
-sleep 2
 wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/User058/von/main/update/menu.sh" && chmod +x /usr/bin/menu
 wget -q -O /usr/bin/menu-ss "https://raw.githubusercontent.com/User058/von/main/update/menu-ss.sh" && chmod +x /usr/bin/menu-ss
 wget -q -O /usr/bin/menu-vmess "https://raw.githubusercontent.com/User058/von/main/update/menu-vmess.sh" && chmod +x /usr/bin/menu-vmess
